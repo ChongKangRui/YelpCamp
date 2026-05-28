@@ -1,0 +1,64 @@
+<% layout('layouts/boiletplate') %>
+    <h1 class="text-center">Edit campground</h1>
+
+
+    <div class="row">
+        <div class="col">
+            <form action="/campgrounds/<%=campground._id%>?_method=PUT" method="POST" novalidate class="validated-form">
+
+                <div class="mb-3">
+                    <label class="form-label" for="title">Title</label>
+                    <input class="form-control" type="text" placeholder="title" name="campground[title]" required
+                        value="<%=campground.title%>">
+                    <div class="invalid-feedback">
+                        Please enter valid title
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="location">Location</label>
+                    <input class="form-control" type="text" placeholder="location" name="campground[location]" required
+                        value="<%=campground.location%>">
+                    <div class="invalid-feedback">
+                        Please enter valid location
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="img">Image URL</label>
+                    <input class="form-control" type="text" placeholder="Image URL" name="campground[image]" required
+                        value="<%=campground.image%>">
+                    <div class="invalid-feedback">
+                        Please enter valid image url
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" for="price">Campground Price</label>
+                    <div class="input-group">
+                        <span class="input-group-text" id="price-label">$</span>
+                        <input class="form-control" type="number" placeholder="0.00" name="campground[price]" required
+                            aria-describedby="price-label" value="<%=campground.price%>">
+                        <div class="invalid-feedback">
+                            Please enter campground price
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" for="description">Description</label>
+                    <textarea class="form-control" type="text" placeholder="" name="campground[description] required"
+                        required><%=campground.description%></textarea>
+                    <div class="invalid-feedback">
+                        Please enter description
+                    </div>
+                </div>
+
+                <button class="btn btn-primary">Update Campground</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <a href="/campgrounds/<%= campground._id%>">Cancel</a>
