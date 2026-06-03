@@ -3,8 +3,8 @@
     <h1 class="text-center">New Campground</h1>
 
     <div class="row">
-        <div class="col">
-            <form action="/campgrounds" method="POST" novalidate class="validated-form">
+        <div class="col-6 offset-3">
+            <form action="/campgrounds" method="POST" novalidate class="validated-form" enctype="multipart/form-data">
 
                 <div class="mb-3">
                     <label class="form-label" for="title">Title</label>
@@ -20,13 +20,18 @@
                         Please enter valid location
                     </div>
                 </div>
-                <div class="mb-3">
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputGroupFile01">Upload Image</label>
+                    <input type="file" class="form-control" id="inputGroupFile01" name="image" multiple>
+                </div>
+                <!-- <div class="mb-3">
                     <label class="form-label" for="img">Image URL</label>
                     <input class="form-control" type="text" placeholder="Image URL" name="campground[image]" required>
                     <div class="invalid-feedback">
                         Please enter valid image url
                     </div>
-                </div>
+                </div> -->
+
 
                 <div class="mb-3">
                     <label class="form-label" for="price">Campground Price</label>
@@ -42,19 +47,18 @@
 
                 <div class="mb-3">
                     <label class="form-label" for="description">Description</label>
-                    <textarea class="form-control" type="text" placeholder="" name="campground[description] required"
+                    <textarea class="form-control" type="text" placeholder="" name="campground[description]" required
                         required></textarea>
                     <div class="invalid-feedback">
                         Please enter description
                     </div>
                 </div>
 
-                <button class="btn btn-primary">Add Campground</button>
+                <button class="btn btn-primary col-4 float-md-start">Add Campground</button>
 
             </form>
 
+            <a href="/campgrounds" class="btn btn-secondary col-4 float-md-end">Back To Campground</a>
         </div>
 
     </div>
-
-    <a href="/campgrounds">Menu</a>
