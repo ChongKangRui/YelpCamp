@@ -44,7 +44,7 @@ You can log in with any of these demo accounts on the live site:
 | Database       | MongoDB, Mongoose                                    |
 | Authentication | Passport.js, passport-local, passport-local-mongoose |
 | Image Upload   | Multer, multer-storage-cloudinary, Cloudinary        |
-| Maps           | @maptiler/client                                     |
+| Maps           | Maptiler                                    |
 | Sessions       | express-session, connect-mongo                       |
 | Validation     | Joi, sanitize-html                                   |
 | Security       | Helmet, express-mongo-sanitize                       |
