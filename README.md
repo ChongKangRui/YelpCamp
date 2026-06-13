@@ -1,12 +1,12 @@
-# 🏕️ YelpCamp
+# YelpCamp
 
 A full-stack campground review web application where users can discover, share, and review campgrounds. Built as a learning project to practice core full-stack web development — covering MVC architecture, RESTful routing, user authentication, cloud image storage and interactive maps.
 
-**🌐 Live Demo:** [yelpcamp-kappa-ten.vercel.app](https://yelpcamp-kappa-ten.vercel.app/)
+**Live Demo:** [yelpcamp-kappa-ten.vercel.app](https://yelpcamp-kappa-ten.vercel.app/)
 
 ---
 
-## 🔑 Try It Out
+## Try It Out
 
 You can log in with any of these demo accounts on the live site:
 
@@ -18,7 +18,7 @@ You can log in with any of these demo accounts on the live site:
 
 ---
 
-## ✨ Features
+## Features
 
 - **Campground CRUD** — Create, view, edit, and delete campground listings with title, location, price, description, and images
 - **Review System** — Authenticated users can post and delete reviews with star ratings on any campground
@@ -34,7 +34,7 @@ You can log in with any of these demo accounts on the live site:
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer          | Technology                                           |
 | -------------- | ---------------------------------------------------- |
@@ -53,7 +53,7 @@ You can log in with any of these demo accounts on the live site:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 YelpCamp/
@@ -74,7 +74,7 @@ YelpCamp/
 └── vercel.json         # Vercel deployment config
 ```
 
-## 🗺️ RESTful Routes
+## RESTful Routes
 
 | Method | Route                                | Description             |
 | ------ | ------------------------------------ | ----------------------- |
@@ -95,9 +95,9 @@ YelpCamp/
 
 ---
 
-## ⚙️ Local Setup
+## Local Setup
 
-> ⚠️ This project requires API keys from Cloudinary and Maptiler, plus a MongoDB connection string. Without a `.env` file the app will not function correctly.
+>  This project requires API keys from Cloudinary and Maptiler, plus a MongoDB connection string. Without a `.env` file the app will not function correctly.
 
 ### Prerequisites
 
@@ -144,7 +144,7 @@ Visit `http://localhost:3000` in your browser.
 
 ---
 
-## 🧠 What I Learned
+## What I Learned
 
 - Building a full-stack MVC app from scratch with Express and MongoDB
 - Designing and implementing RESTful routes
