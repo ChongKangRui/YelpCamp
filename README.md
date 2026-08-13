@@ -2,7 +2,7 @@
 
 A full-stack campground review web application where users can discover, share, and review campgrounds. Built as a learning project to practice core full-stack web development — covering MVC architecture, RESTful routing, user authentication, cloud image storage and interactive maps.
 
-**Live Demo:** [yelpcamp-kappa-ten.vercel.app](https://ckryelpcamp.vercel.app/)
+**Live Demo:** [ckryelpcamp.vercel.app](https://ckryelpcamp.vercel.app/)
 
 ---
 
